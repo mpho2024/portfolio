@@ -3,19 +3,39 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import TabButton from "./TabButton";
-
+{/*
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>PostgreSQL</li>
-        <li>Angular</li>
-        <li>Spring Boot</li>
-        <li>JavaScript</li>
-        <li>Next.js</li>
-      </ul>
+      <div className="skills-grid">
+        <div className="skill-item">
+          <div className="skill-circle-container">
+            <div className="skill-circle">PostgreSQL</div>
+          </div>
+        </div>
+        <div className="skill-item">
+          <div className="skill-circle-container">
+            <div className="skill-circle">Angular</div>
+          </div>
+        </div>
+        <div className="skill-item">
+          <div className="skill-circle-container">
+            <div className="skill-circle">Spring Boot</div>
+          </div>
+        </div>
+        <div className="skill-item">
+          <div className="skill-circle-container">
+            <div className="skill-circle">JavaScript</div>
+          </div>
+        </div>
+        <div className="skill-item">
+          <div className="skill-circle-container">
+            <div className="skill-circle">Next.js</div>
+          </div>
+        </div>
+      </div>
     ),
   },
   {
@@ -28,7 +48,17 @@ const TAB_DATA = [
       </ul>
     ),
   },
-];
+  {
+    title: "Certifications",
+    id: "certifications",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Full Stack Web Development (Udemy)</li>
+        <li>JavaScript ES6 (Coursera)</li>
+      </ul>
+    ),
+  },
+];*/}
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
@@ -62,27 +92,26 @@ const AboutSection = () => {
                 alt="GitHub"
                 width={50}
                 height={50}
-                //className="animate-spin"
               />
             </Link>
-            <Link href="https://github.com/mpho2024" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/mpho-tsatsi-5a93472a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android">
               <Image
                 src="/images/linkedincon.png"
                 alt="LinkedIn"
                 width={30}
                 height={30}
-                //className="animate-spin"
               />
             </Link>
           </div>
         </div>
 
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-[#4B0082] mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-[#4B0082] mb-4">Hello, I am Mpho Tsatsi!</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.
+            I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript,Springboot
+            PostgreSQL,HTML, CSS, and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.
           </p>
-          <div className="flex flex-row text-[#4B0082] justify-start mt-8">
+       {/* <div className="flex flex-row text-[#4B0082] justify-start mt-8">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
               Skills
             </TabButton>
@@ -93,7 +122,7 @@ const AboutSection = () => {
               Certifications
             </TabButton>
           </div>
-          <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
+          <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>*/}
         </div>
       </div>
     </section>

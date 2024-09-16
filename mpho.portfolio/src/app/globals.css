@@ -31,3 +31,46 @@ body {
     text-wrap: balance;
   }
 }
+/* styles/globals.css */
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.skill-circle-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #4B0082; /* Indigo color */
+  position: relative;
+  overflow: hidden;
+  animation: rotate 10s linear infinite; /* Rotate animation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-circle {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
