@@ -4,6 +4,7 @@ import AboutSection from './components/AboutSection';
 import Projects from './components/Projects';
 import EmailSection from './components/EmailSection';
 import HeroSection from './components/HeroSection';
+import Skills from './components/Skills';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
 
       <div className="container mt-24 mx-auto px-12 py-4">
         <AboutSection />
+        <Skills/>
       </div>
 
       <section id="project" className="py-16">
